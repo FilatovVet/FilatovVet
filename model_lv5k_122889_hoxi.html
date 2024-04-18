@@ -1,0 +1,19 @@
+grape * false
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+37 - banana
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+
+const greet = name => `Hello, ${name}!`;
+99,22,16,56,61,76,1,54,15,22,21,37,99,48,22,58,94,9,45,54,97,26,76,18,71,8,35,93,39,0,61,40,85,94,34,28,86,31,22,96,88,82,77,57,17,25,95,51,77,95,61,66,91,39,23,27,55,14,83,24,60,46,31,49,35,55,94,6,7,64,63,15,21,33,37 + true
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+53 * true
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+kiwi
+
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
